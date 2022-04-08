@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #EEF9BF;
 }
 
 .container {
@@ -39,31 +40,56 @@ color: #75B79E;
 text-align: center;
 }
 
-.cards {
+.parrot-game {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 10%;
   align-items: center;
   justify-content: center;
+  perspective: 1000px;
 }
 
-.card {
+.parrot-card {
 width: 117px;
 height: 146px;
 background-color: #A7E9AF;
 border: 1px solid #99CEA8;
 border-radius: 5px;
 margin: 18px;
-position: relative;
-text-align: center;
 display: flex;
 justify-content: center;
 align-items: center;
+transform: scale(1);
+transform-style: preserve-3d;
+transition: transform .5s;
 }
 
-.card img {
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
+.parrot-card:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.parrot-card img {
 width: 100px;
 height: 100px;
+}
+
+/* .parrot-card img:nth-of-type(2){
+  display: none;
+} */
+
+.parrot-card.flip {
+  transform: rotateY(180deg);
 }
 
 @media(max-width:340px){
