@@ -18,8 +18,6 @@ function askCards() {
 
   </div>`
 
-  //LINHA ADICIONADA PARA TESTE DO VS CODE WEB
-
   // let sortRandom = [];
   // sortRandom.sort(sorter)
 
