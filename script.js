@@ -18,6 +18,8 @@ function askCards() {
 
   </div>`
 
+  // teste de merge de repositorio remoto!
+
   // let sortRandom = [];
   // sortRandom.sort(sorter)
 
@@ -25,7 +27,7 @@ function askCards() {
   //   return Math.random() - 0.5;
   // }
 
-  keepCards.innerHTML += keepDiv 
+  keepCards.innerHTML += keepDiv
   keepCards.innerHTML += keepDiv
 }
 askCards()
