@@ -18,7 +18,7 @@ function askCards() {
 
   </div>`
 
-  // teste de merge de repositorio remoto!
+  //Início de logica e embaralhamento.
 
   // let sortRandom = [];
   // sortRandom.sort(sorter)
