@@ -18,6 +18,13 @@ function askCards() {
 
   </div>`
 
+  for (let i = 0; i < numberCards.length; i++) {
+    keepDiv.innerHTML += `<div class="parrot-card" >
+  
+    <img class="back-side" src="${}" alt="">
+  
+    </div>`
+
   //Início de logica e embaralhamento.
 
   let gifs = ["bobross", "explody", "metal", "fiesta", "revertit", "triplets", "unicorn"];
