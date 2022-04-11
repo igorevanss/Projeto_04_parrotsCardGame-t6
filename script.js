@@ -14,21 +14,35 @@ function askCards() {
   let keepDiv = `<div class="parrot-card" >
   <img class="front-side" src="./images/front.png" alt="">
 
-  <img class="back-side" src="./images/unicornparrot.gif" alt="">
+  <img class="back-side" src="${}" alt="">
 
   </div>`
 
   //Início de logica e embaralhamento.
 
-  // let sortRandom = [];
-  // sortRandom.sort(sorter)
+  let gifs = ["bobross", "explody", "metal", "fiesta", "revertit", "triplets", "unicorn"];
 
-  // function sorter(){
-  //   return Math.random() - 0.5;
-  // }
+   
+   gifs.sort(sorter)
+
+   function sorter(){
+     return Math.random() - 0.5;
+   }
+
+   console.log(gifs)
+   console.log()
 
   keepCards.innerHTML += keepDiv
   keepCards.innerHTML += keepDiv
+
+  let sortRandom = [];
+
+  for (let i=0; i<numberCards.length/2; i++){
+    sortRandom.push(gifs[i])
+    sortRandom.push(gifs[i])
+  }
+
+  sortRandom.sort(sorter)
 }
 askCards()
 
